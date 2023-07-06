@@ -1,0 +1,129 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    
+}
+.container{
+    width: 100%;
+    height:100vh;
+    background-color: #405271;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-book{
+    max-width: 1200px;
+    height: 100vh;
+    padding: 15px;
+    background-color: #405271;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:repeat(8,1fr);
+    grid-gap: 20px;
+}
+.temperature{
+    grid-area: 1 /1/9/2;
+    background-color: #34445e;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.search{
+    display: flex;
+}
+.input-box{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background: #3d4d67;
+    color: #7d8ca7;
+}
+.btn-search{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3d4d67;
+    color: #7d8ca7;
+    margin: 0 5px;
+}
+
+.city-name{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #7d8ca7;
+    text-align: center;
+}
+.temp-img{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+   
+}
+.temp{
+    font-size: 20px;
+    color: #7d8ca7;
+    /* background-color: blue; */
+}
+
+.img{
+    font-size: 80px;
+    color: #7d8ca7
+    /* background-color: yellowgreen; */
+}
+
+
+.dfcase{
+    width: 330px;
+    height: 310px;
+    margin-top: 25px;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.variant{
+    border-radius: 5px;
+    background-color:#3d4d67;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: #7d8ca7;
+}
+.icon{
+    font-size: 30px;
+    color: #81a43e;
+}
+
+
+.sealevel{
+    grid-area: 1/2/5/3;
+    background-color:#34445e;
+    border-radius: 10px;
+    background-image: url('img1.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+.weather-map{
+    grid-area: 5/2/9/3;
+    background-color: brown;
+    border-radius: 10px;
+   
+
+}
+iframe{
+    border-radius: 10px;
+    width: 100%;
+    min-height: 330px;
+}
